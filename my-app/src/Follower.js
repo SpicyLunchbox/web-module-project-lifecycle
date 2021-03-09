@@ -3,14 +3,12 @@ import React from 'react'
 class Follower extends React.Component {
 
     render() {
-        const {Follower} = this.props;
+        const {follower} = this.props;
 
         return (
-            <div key={Follower.id} className="Follower">
-                <h3>{Follower.name}</h3>
-                <p>Followers: {Follower.followers}</p>
-                <p>Following: {Follower.following}</p>
-                <p>projects: {Follower.public_repos}</p>
+            <div key={follower.id} className="follower">
+                <h3>{follower.login}</h3>
+                <img src={follower.avatar_url} alt="me"/>
             </div>
         )
     }

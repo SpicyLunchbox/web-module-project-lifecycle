@@ -6,9 +6,7 @@ export default function Github(props) {
     return (
         <>
         <div className="github_panel">
-            {props.githubUsers.map(user => (
-                <User user={user}/>
-            ))}
+                <User user={props.githubUsers}/>
         </div>
 
 

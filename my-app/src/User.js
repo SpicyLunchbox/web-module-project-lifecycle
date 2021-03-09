@@ -7,7 +7,8 @@ class User extends React.Component {
 
         return (
             <div key={user.id} className="user">
-                <h3>{user.name}</h3>
+                <h3>{user.login}</h3>
+                <img src={user.avatar_url} alt="follower"/>
                 <p>Followers: {user.followers}</p>
                 <p>Following: {user.following}</p>
                 <p>projects: {user.public_repos}</p>
